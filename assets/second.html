@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - titulo
+ -->
+
+  <title>Nervosa</title>
+
+  <!-- 
+    - favicon
+  -->
+
+  <link rel="shortcut icon" href="./src/second-imgs/logo.png" type="image/svg+xml">
+
+  <!-- 
+    - css link
+  -->
+
+  <link rel="stylesheet" href="./src/second.css">
+
+  <!-- 
+    - google font link
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body id="top">
+
+   <!-- 
+    - cursor
+  -->
+
+  <div class="custom-cursor"></div>
+
+
+  <!-- 
+    - preloader
+  -->
+
+  <div class="preloader">
+    <img src="./src/second-imgs/gif.webp" alt="carregando...">
+</div>
+
+ <!-- Pop-up de Carrinho -->
+
+ <div class="popup cart-popup">Item adicionado/removido do carrinho!</div>
+
+ <!-- Pop-up de Estrelas -->
+
+ <div class="popup star-popup">Item adicionado/removido aos favoritos!</div>
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" id="home">
+
+    <div class="alert">
+      <div class="container alert-container">
+        <p class="alert-text">Oferecemos entrega gratuita em todos os pedidos, sem custo adicional para você.</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+
+        <div class="input-wrapper">
+        <div class="search-container">
+          <input type="search" name="search" id="search-input" placeholder="Pesquisar..." class="search-field" autocomplete="off">
+          <div id="search-results" class="search-results"></div>
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+      </div>
+    </div>
+
+
+        <a href="../index.html" class="logo">
+          <img src="./src/second-imgs/nervosa-logo.png" width="179" height="26" alt="Nervosa">
+        </a>
+
+        <div class="header-actions">
+
+          <button class="header-action-btn user-btn" aria-label="user">
+            <a href="../form/form.html">
+              <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+            </a>
+         
+          </button>
+
+           
+          <button class="header-action-btn" aria-label="favourite item">
+            <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge star-badge">0</span>
+          </button>
+
+          <button class="header-action-btn" aria-label="cart item">
+            <data class="btn-text" value="0">R$0.00</data>
+            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+            
+        </button>
+
+        
+
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link has-after">HOME</a>
+            </li>
+
+            <li>
+              <a href="#collection" class="navbar-link has-after">COLEÇÃO</a>
+            </li>
+
+            <li>
+              <a href="#shop" class="navbar-link has-after">LOJA</a>
+            </li>
+
+            <li>
+              <a href="#offer" class="navbar-link has-after">OFERTA</a>
+            </li>
+
+            <li>
+              <a href="#sobre" class="navbar-link has-after">SOBRE</a>
+            </li>
+
+          </ul>
+
+        
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="../index.html" class="logo">
+          <img src="./src/second-imgs/nervosa-logo.png" width="179" height="26" alt="logo">
+        </a>
+        
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <div class="bar">
+
+        <a href="https://github.com/lopppes" target="_blank">
+          <i class="fa-brands fa-github"></i>
+          Github</a>
+
+         <a href="https://www.linkedin.com/in/samuel-ara%C3%BAjo-733a54241" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+         Linkedin</a>
+      </div>
+
+  
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="#home" class="navbar-link" data-nav-link>HOME</a>
+        </li>
+
+        <li>
+          <a href="#collection" class="navbar-link" data-nav-link>COLEÇÃO</a>
+        </li>
+
+        <li>
+          <a href="#shop" class="navbar-link" data-nav-link>SHOP</a>
+        </li>
+
+        <li>
+          <a href="#offer" class="navbar-link" data-nav-link>OFERTA</a>
+        </li>
+
+        <li>
+          <a href="#sobre" class="navbar-link" data-nav-link>SOBRE</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="hero" data-section>
+        <div class="container">
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item slider-scroll  slider">
+              <div class="hero-card has-bg-image" style="background-image: url('./src/second-imgs/bg-1.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    COLEÇÃO 2023
+                  </h1>
+
+                  <p class="hero-text">
+                    A elegância encontrando a conveniência.
+                  </p>
+
+                  <p class="price">A partir de R$: 125,00</p>
+
+                  <a href="#shop" class="btn btn-primary">COMPRAR AGORA</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COLLECTION
+      -->
+
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Coleções</h2>
+
+            <a href="#shop" class="btn-link">
+              <span class="span">produtos e mais</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+       
+
+          <ul class="collection-list">
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">T-SHIRT</h2>
+
+                <p class="card-text">A partir de R$: 150,00</p>
+
+                <a href="#shop" class="btn-link">
+                  <span class="span">Ver Mais</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./src/second-imgs/colecao-1.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">SKI MASK</h2>
+
+                <p class="card-text">A partir de R$: 69,00</p>
+
+                <a href="#ski-mask" class="btn-link">
+                  <span class="span">Ver Mais</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./src/second-imgs/colecao-2.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">BLOUSES</h2>
+
+                <p class="card-text">A partir de R$: 190,00</p>
+
+                <a href="#offer" class="btn-link">
+                  <span class="span">Ver Mais</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./src/second-imgs/colecao-3.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #SHOP
+      -->
+
+      <section class="section shop" id="t-shirt">
+        <div class="container" id="shop" aria-label="shop" data-section>
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Mais Vendidos</h2>
+
+            <a href="#shop" class="btn-link">
+              <span class="span">Produtos</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="shop-card" id="shop-card-1">
+
+                <div class="card-banner img-holder" style="--width: 700;">
+                  <a href="../products/batmotion.html">
+                  <img src="./src/second-imgs/vintage-01.webp" width="540" loading="lazy"
+                    alt="vintage" class="img-cover">
+                  </a>
+
+                  <span class="badge" aria-label="10% off">-10%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn cart-btn" data-price="150.00" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn star-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn" aria-label="compare" onclick="trocarImagem('shop-card-1')">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content" >
+
+                  <div class="price">
+                    <del class="del">R$166.67</del>
+
+                    <span class="span">R$150.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="../products/batmotion.html" class="card-title">"BATMOTION" T-SHIRT / BLACK</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">233 compras</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card" id="shop-card-2">
+
+                <div class="card-banner img-holder" style="--width: 700;">
+
+                  <a href="../products/vamp.html">
+                  <img src="./src/second-imgs/vintage-02.webp" width="540" loading="lazy"
+                    alt="vintage" class="img-cover">
+
+                  </a>
+                  <div class="card-actions">
+
+
+                    <button class="action-btn cart-btn" data-price="150.00" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn star-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn" aria-label="compare" onclick="trocarImagem('shop-card-2')">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">R$150.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="../products/vamp.html" class="card-title">"VAMP" T-SHIRT / BLACK</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">170 compras</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card" id="shop-card-3">
+
+                <div class="card-banner img-holder" style="--width: 700;">
+
+                  <a href="../products/stand.html">
+
+                  <img src="./src/second-imgs/vintage-03.webp" width="540" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn cart-btn" data-price="180.00" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn star-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" onclick="trocarImagem('shop-card-3')">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content"  id="ski-mask">
+
+                  <div class="price">
+                    <span class="span">R$180.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="../products/stand.html" class="card-title">"STAND OUT" T-SHIRT / BLACK</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">120 compras</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section shop" id="shop" aria-label="shop" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Promoção</h2>
+
+            <a href="#shop" class="btn-link">
+              <span class="span">Produtos</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="shop-card" id="shop-card-4">
+
+                <div class="card-banner img-holder" style="--width: 540;">
+
+                  <a href="../products/vamp-mask.html">
+                  <img src="./src/second-imgs/mask-01.webp" width="540" loading="lazy"
+                    alt="mask" class="img-cover">
+
+                  </a>
+
+                  <span class="badge" aria-label="20% off">-20%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn cart-btn" data-price="71.00" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn star-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn" aria-label="compare" onclick="trocarImagem('shop-card-4')">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">R$88.75</del>
+
+                    <span class="span">R$71.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="../products/vamp-mask.html" class="card-title">"VAMP" SKI MASK</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">70 compras</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card" id="shop-card-5">
+
+                <div class="card-banner img-holder" style="--width: 540;">
+                  <a href="../products/opium.html">
+                  <img src="./src/second-imgs/mask-02.webp" width="540" loading="lazy"
+                    alt="mask" class="img-cover">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn cart-btn" data-price="90.00" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn star-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn" aria-label="compare" onclick="trocarImagem('shop-card-5')">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">R$90.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="../products/opium.html" class="card-title">"OPIUM" SKI MASK
+                    </a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">77 compras</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card" id="shop-card-6">
+
+                <div class="card-banner img-holder" style="--width: 540;">
+                  <a href="../products/miracle.html">
+                  <img src="./src/second-imgs/mask-03.webp" width="540"  loading="lazy"
+                    alt="Cmask" class="img-cover">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn cart-btn" data-price="99.00" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn star-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn" aria-label="compare" onclick="trocarImagem('shop-card-6')">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">R$99.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="../products/miracle.html" class="card-title">"MIRACLE" SKI MASK</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">51 compras</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card" id="shop-card-7">
+
+                <div class="card-banner img-holder" style="--width: 540;">
+
+                  <a href="../products/grilzz.html">
+
+                  <img src="./src/second-imgs/mask-04.webp" width="540" loading="lazy"
+                    alt="mask" class="img-cover">
+
+                  </a>
+                  <div class="card-actions">
+
+                    <button class="action-btn cart-btn" data-price="85.00" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn star-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn" aria-label="compare" onclick="trocarImagem('shop-card-7')">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">R$85.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="../products/grilzz.html" class="card-title">"GRILZZ" SKI MASK</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">30 compras</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card" id="shop-card-8">
+
+                <div class="card-banner img-holder" style="--width: 540;">
+
+                  <a href="../products/faces.html">
+
+                  <img src="./src/second-imgs/mask-05.webp" width="540" loading="lazy"
+                    alt="mask" class="img-cover">
+
+                  </a>
+
+     
+                  <div class="card-actions">
+
+                    <button class="action-btn cart-btn" data-price="95.00" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn star-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn" aria-label="compare" onclick="trocarImagem('shop-card-8')">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+    
+
+                    <span class="span">R$95.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="../products/faces.html" class="card-title">"FACES" SKI MASK
+                    </a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">93 compras</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card" id="shop-card-9">
+
+                <div class="card-banner img-holder" style="--width: 540;">
+
+                  <a href="../products/devil.html">
+
+                  <img src="./src/second-imgs/mask-06.webp" width="540"  loading="lazy"
+                    alt="mask" class="img-cover">
+
+                  </a>
+
+                  <div class="card-actions">
+
+                        <button class="action-btn cart-btn" data-price="69.00" aria-label="add to cart">
+                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+    </button>
+
+                    <button class="action-btn star-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                    <button class="action-btn" aria-label="compare" onclick="trocarImagem('shop-card-9')">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">R$69.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="../products/devil.html" class="card-title">"DEVIL" SKI MAS</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">80 compras</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BANNER
+      -->
+
+      <section class="section banner" id="offer" aria-label="banner" data-section>
+        <div class="container">
+
+          <ul class="banner-list">
+
+            <li>
+              <div class="banner-card banner-card-1 has-before hover:shine">
+
+                <p class="card-subtitle">New Collection</p>
+
+                <h2 class="h2 card-title">Descubra as blusas da nossa nova coleção.</h2>
+
+                <a href="#offer" class="btn btn-secondary banner-btn">Explorar</a>
+
+                <div class="has-bg-image" style="background-image: url('./src/second-imgs/new-1.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="banner-card banner-card-2 has-before hover:shine">
+
+                <h2 class="h2 card-title" id="blouses">20% OFF</h2>
+                <p class="card-text">
+                  Onde a elegância encontra o conforto para um inverno inesquecível.
+                </p>
+
+                <a href="#offer" class="btn btn-secondary banner-btn-2" >Ver Mais</a>
+
+                <div class="has-bg-image" style="background-image: url('./src/second-imgs/new-2.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #OFFER
+      -->
+
+      <section class="section offer" aria-label="offer" data-section>
+        <div class="container">
+
+          <figure class="offer-banner">
+            <img src="./src/second-imgs/gosha.webp" width="405" height="508" loading="lazy" alt="produtos em oferta"
+              class="w-100">
+ 
+
+              <img src="./src/second-imgs/kash.webp" width="605" height="608" loading="lazy" alt="produtos em oferta"
+              class="w-100">
+              
+
+          </figure>
+
+          <div class="offer-content">
+
+            <p class="offer-subtitle">
+              <span class="span">Oferta Especial da Nova Coleção</span>
+
+              <span class="badge" aria-label="20% off">-20%</span>
+            </p>
+
+            <h2 class="h2-large section-title">Manifesto</h2>
+
+            <p class="section-text">
+              Manifesto de estilo e autenticidade que irá elevar seu guarda-roupa a um novo patamar de elegância
+            </p>
+
+            <div class="countdown">
+              <span class="time" aria-label="days">06</span>
+              <span class="time" aria-label="hours">06</span>
+              <span class="time" aria-label="minutes">07</span>
+              <span class="time" aria-label="seconds">00</span>
+            </div>
+
+            <a href="#offer" class="btn btn-primary">Ver Mais</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="sobre" data-section>
+        <div class="container">
+
+          <ul class="portfolio-list">
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./src/second-imgs/bg-sobre.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">SOBRE NÓS</p>
+
+                  <h3 class="h3 card-title">Saiba como estamos comprometidos.</h3>
+
+                  <span class="btn-link">
+                    <span>Ver Mais</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+            </ul>
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-label="feature" data-section>
+        <div class="container">
+
+          <h2 class="h2-large section-title">Por que comprar com a Nervosa?</h2>
+
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./src/second-imgs/icons-1.jpg" width="204" height="236" loading="lazy" alt="icon 01"
+                  class="card-icon">
+
+                <h3 class="h3 card-title">PUREZA</h3>
+
+                <p class="card-text">
+                  Nossa coleção encapsula a essência da elegância, combinando estilo e compromisso com a pureza.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./src/second-imgs/icons-2.jpg" width="204" height="236" loading="lazy"
+                  alt="icon 02" class="card-icon">
+
+                <h3 class="h3 card-title">ORIGEM</h3>
+
+                <p class="card-text">
+                  Cuidamos da origem dos nossos ingredientes, assegurando que cada peça reflita a autenticidade e a qualidade que você merece.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./src/second-imgs/icons-3.jpg" width="204" height="236" loading="lazy"
+                  alt="icon 03" class="card-icon">
+
+                <h3 class="h3 card-title">INTRÍNSECA</h3>
+
+                <p class="card-text">
+                  Itens de gangster é uma fusão de elegância e rebeldia. Explore a pureza intrínseca e o estilo autêntico que definem nossa marca.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #FAQ
+      -->
+
+      <section class="section faq" aria-label="frequently asked questions" data-section>
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    01 - Qual é a filosofia de design da sua grife?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    A nossa grife tem uma filosofia de design centrada na elegância atemporal, usando materiais de alta qualidade e técnicas de fabricação artesanais para criar peças únicas que resistem ao teste do tempo.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    02 - Qual é a diferença entre suas peças de grife e produtos de marcas convencionais?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    A diferença está na atenção aos detalhes, na qualidade dos materiais e na produção cuidadosamente controlada. Cada peça de nossa grife é cuidadosamente elaborada para oferecer estilo e durabilidade superiores.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    03 - Vocês oferecem opções de personalização?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    Sim, oferecemos opções de personalização para muitos de nossos produtos. Isso permite que nossos clientes criem peças exclusivas que refletem seu estilo pessoal.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    04 - Como faço para cuidar das minhas peças adequadamente?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    Recomendamos consultar as instruções de cuidados fornecidas com cada produto, pois as orientações podem variar. Geralmente, recomendamos limpeza a seco para a maioria das roupas de grife e uso de produtos específicos para couro e acessórios de couro.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    05 - Qual é a política de devolução e garantia da sua grife?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    Oferecemos uma política de devolução flexível que permite aos clientes devolverem produtos não usados em até 30 dias após a compra. Além disso, todos os nossos produtos têm garantia contra defeitos de fabricação, e estamos comprometidos em garantir a satisfação do cliente. Para obter detalhes específicos, consulte nossa página de políticas de devolução e garantia no site.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="creditos">
+      <a href="../credits/credits.html">
+        créditos de imagens
+        <ion-icon name="arrow-forward" class="arrow" aria-hidden="true"></ion-icon>
+      </a>
+      </div>
+
+    
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+
+          <a href="https://github.com/lopppes" target="_blank">
+            <p class="copyright">
+              &copy; lopppes
+            </p>
+          </a>
+
+          
+          
+          
+          <ul class="social-list">
+
+            <li>
+              <a href="https://github.com/lopppes" target="_blank" class="social-link">
+                <i class="fa-brands fa-square-github"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/samuel-ara%C3%BAjo-733a54241/" class="social-link" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/samuellopes_dev/" target="_blank" class="social-link">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </li>
+
+
+          </ul>
+        </div>
+
+        
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - play
+  -->
+
+  <audio id="myAudio" src="./src/audio/music.mpeg"></audio>
+
+  <a href="#music" class="music-btn" onclick="toggleMusic()">
+    <i class="fa-solid fa-play"></i>
+  </a>
+
+   <div id="popup-play">Música ativada</div>
+
+ 
+
+   <!-- 
+    - cdn
+  -->
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./src/second.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

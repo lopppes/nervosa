@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- 
+    - titulo
+ -->
+
+  <title>Formulário</title>
+
+  <!-- 
+    - favicon
+  -->
+
+  <link rel="shortcut icon" href="./src/imgs/logo.png" type="image/svg+xml">
+
+  <!-- 
+    - css link
+  -->
+
+  <link rel="stylesheet" href="./src/styleform.css">
+
+  <!-- 
+    - google font link
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+   <!-- 
+    - cursor
+  -->
+
+  <div class="custom-cursor"></div>
+
+
+  <!-- 
+    - preloader
+  -->
+
+  <div class="preloader">
+    <img src="./src/imgs/gif.webp" alt="carregando...">
+</div>
+
+    <main>
+
+        <div class="mensagem">
+
+            <h1>
+                FICOU COM DÚVIDA? 
+                <br>
+                NOS MANDE UMA MENSAGEM!
+            </h1>
+
+            <br>
+
+            <p>
+                Caso surja alguma dúvida, fique à vontade para enviar uma mensagem, e responderemos em menos de 24 horas.
+            </p>
+
+            <br>
+
+            <a href="../assets/second.html">
+                <ion-icon name="arrow-forward" aria-hidden="true" class="icon"></ion-icon>
+                Voltar
+                
+            </a>
+
+        </div>
+
+        <!-- form -->
+
+        <div class="formulario">
+
+            <div class="conteudo">
+
+                <form id="contatoForm" action="https://formspree.io/f/mvojzwwz" method="post">
+                    
+                <div class="campo">
+
+                <input type="name" name="name" placeholder="Nome completo *" required>
+                
+
+            </div>
+               
+            <div class="campo">
+
+                <input type="email" name="email" placeholder="Email *" required>
+                
+
+            </div>
+
+
+            <div class="campo">
+
+                <textarea name="menssage" id="mensagem" cols="30" rows="10" placeholder="Mensagem *" required></textarea>
+                
+
+            </div>
+
+
+                <button id="enviar" type="submit">Enviar</button>
+
+            </form>
+
+        </div>
+
+
+        </div>
+
+    </main>
+
+  <!-- 
+    - - link js
+  -->
+
+
+    <script src="./src/form.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

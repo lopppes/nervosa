@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- 
+    - titulo
+  -->
+
+  <title>SHOP</title>
+
+  <!-- 
+    - favicon
+  -->
+
+  <link rel="shortcut icon" href="../assets/src/second-imgs/logo.png" type="image/x-icon">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./shop.css">
+
+  <!-- 
+    - google font link
+  -->
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+     <!-- 
+    - cursor
+  -->
+
+  <div class="custom-cursor"></div>
+
+
+  <!-- 
+    - preloader
+  -->
+
+  <div class="preloader">
+    <img src="../assets/src/second-imgs/gif.webp" alt="carregando...">
+</div>
+
+
+  <!-- 
+    - form
+  -->
+
+    <form>
+
+
+        <div class="initial">
+
+
+          <section class="inputs flex">
+    
+            <div class="input-wrapper">
+              <label for="cc-number">Número do Cartão</label>
+              <input id="cc-number" type="text" placeholder="**** **** **** ****" required/>
+            </div>
+    
+            <div class="input-wrapper">
+
+              <label for="cc-holder">Nome do Proprietário</label>
+              <input id="cc-holder" type="text" placeholder="nome:" required/>
+              <div class="warning">
+                <img src="./img-products/alert.svg" alt="ícone de alerta" />
+                Nome do proprietário obrigatório
+              </div>
+            </div>
+    
+            <div class="col-2 flex">
+              <div class="input-wrapper">
+                <label for="cc-validity">Validade</label>
+                <input id="cc-validity" type="text" placeholder="mm/aa" required/>
+              </div>
+    
+              <div class="input-wrapper">
+                <label class="flex help" for="cc-cvv">CVV
+                </label>
+                <input id="cc-cvv" placeholder="cvv" type="text" required/>
+              </div>
+    
+            </div>
+    
+          </section>
+    
+          <section id="credit-card">
+            <div class="front">
+              <div class="front-image">
+                
+                <img src="./img-products/chip.png" alt="chip">
+                  <img src="./img-products/aproximation.svg" alt="" style="width: 3.5rem; margin-right: 2rem;">
+                <div class="dates">
+
+                  <span class="code-view-credit-card">0000 0000 0000  0000</span>
+    
+                  <div class="user-data">
+                    <span class="user-name" style="text-transform: uppercase;">Seu nome</span>
+                    <span class="expiration">••/••</span>
+                  </div>
+                </div>
+                </div>
+            </div>
+    
+            <div class="back">
+    
+              <div class="bar-black"></div>
+              <div class="cvv-code">
+                <div class="bar-code">***</div>
+                <p class="text-cvv">CVV</p>
+              </div>
+            </div>
+            
+            <section class="info-security flex">
+              <i class="fa-solid fa-shield-halved"></i>
+              <p class="preencha"> Seus dados estão seguros</p>
+            </section>
+          </section>
+        </div>
+    
+        <button>Adicionar Cartão</button>
+
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <span class="popup-close" id="popup-close">&times;</span>
+            <p>Preencha todos os campos antes de adicionar o cartão.</p>
+          </div>
+        </div>
+        
+
+        <div class="voltar">
+          <a href="../assets/second.html">Voltar</a>
+
+        </div>
+
+       
+      </form>
+    
+      <script src="https://unpkg.com/imask"></script>
+      <script src="./shop.js"></script>
+
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+</body>
+
+</html>

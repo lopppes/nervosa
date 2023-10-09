@@ -1,0 +1,436 @@
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    /* fontes */
+    --ff-kumbh-sans: 'Kumbh Sans', sans-serif;
+}
+
+     
+/*-----------------------------------*\
+  #CURSOR
+\*-----------------------------------*/
+  
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+   
+  }
+  
+  ::-webkit-scrollbar-track { background-color: hsl(0, 0%, 0%); }
+  
+  ::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
+  
+  ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
+  
+  
+  
+    
+/*-----------------------------------*\
+  #PRELOADER
+\*-----------------------------------*/
+  
+  
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+    opacity: 1; 
+    transition: opacity .3s ease-in-out;
+    
+}
+
+.preloader img {
+    width: 300px; 
+    height: 300px; 
+}
+
+.loaded .preloader {
+    opacity: 0; 
+     display: none;
+    
+
+    
+}
+
+/*-----------------------------------*\
+  #CURSOR
+\*-----------------------------------*/
+  
+
+.custom-cursor {
+    width: 32px; 
+    height: 32px; 
+    background-image: url('../assets/src/second-imgs/cursor.avif'); 
+    background-size: cover;
+    position: absolute;
+    pointer-events: none; 
+    z-index: 1000000;
+}
+  
+/*-----------------------------------*\
+  #BODY
+\*-----------------------------------*/
+html{
+    cursor: none;
+    overflow-x: hidden;
+}
+
+
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--ff-kumbh-sans);
+    background: #000000;
+}
+
+
+.initial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 720px) {
+    .initial {
+        flex-wrap: wrap;
+    }
+    #credit-card {
+        margin-top: 6.5rem;
+      
+    }
+   
+}
+
+/*-----------------------------------*\
+  #FORM
+\*-----------------------------------*/
+  
+form {
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 3.4rem;
+    max-width: 90rem;
+    margin: auto;
+    margin-top: 10rem;
+    
+}
+.voltar{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+    
+}
+.voltar:hover{
+    color: rgb(255, 0, 0);
+}
+.voltar a{
+    color: #fff;
+    cursor: none;
+    text-align: center;
+    transition: 300ms ease-in;
+}
+.voltar a:hover{
+    color: #ff0026;
+}
+#credit-card {
+    width: 35rem;
+    height: 22rem;
+    perspective: 60rem;
+    margin-left: 2.2rem;
+}
+
+#credit-card > div {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    
+}
+
+#credit-card .front .front-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #898989, #000000, rgb(158, 158, 158));
+    border-radius: 1rem;
+    position: relative;
+}
+
+#credit-card .front img {
+    width: 8rem; 
+    margin-bottom: 10rem;
+}
+
+.front .dates {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: absolute;
+    margin-left: 1.2rem;
+    padding-top: 2rem;
+}
+
+#credit-card .front .code-view-credit-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+    font-size: 2.4rem;
+    color: #ffffffaa;
+    padding: 4rem 4rem;
+}
+
+.user-data {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    justify-content: space-between;
+    color: #ffffffaa;
+    font-weight: lighter;
+    width: 25.0rem;
+    max-width: 100%;
+}
+
+.expiration {
+    float: right;
+}
+
+#credit-card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(35deg, #363636, #a1a1a1, rgb(0, 0, 0));
+    border-radius: 1rem;
+}
+
+#credit-card .back .bar-black {
+    flex: 1;
+    background: #111111da;
+    height: 4.5rem;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+}
+
+#credit-card .back .bar-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background: #f7f7f7ba;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    color: #2f2e2ee8;
+}
+
+.text-cvv {
+    margin-right: 1rem;
+    color: #c5c5c5;
+}
+
+.cvv-code {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.back img {
+    width: 4rem;
+}
+
+.card-number .back {
+    transform: rotateY(0deg) !important;
+}
+
+.card-number .front {
+    transform: rotateY(180deg);
+}
+
+#credit-card .back {
+    transform: rotateY(-180deg);
+    top: -5px;
+}
+
+#credit-card:hover .front {
+    transform: rotateY(180deg);
+}
+
+#credit-card:hover .back {
+    transform: rotateY(0deg);
+}
+
+.flex-box,
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+}
+
+.inputs {
+    margin-top: 4.8rem;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 100%;
+    cursor: none;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #ffffff;
+    gap: 0.4rem;
+    align-items: center;
+   
+}
+
+input {
+    margin-top: 0.4rem;
+    width: 100%;
+    padding: 1.2rem;
+    border: 0.1rem solid rgba(0, 0, 0, .3);
+    border-radius: 0.5rem;
+    color: #000000;
+    cursor: none;
+}
+
+input:focus {
+    border: 0.15rem solid #000000;
+    outline: 0.15rem solid #000000;
+}
+
+input:invalid:focus {
+    outline: 0.15rem solid #ff556e;
+    border: 0.15rem solid #ff556e;
+}
+
+input+.warning {
+    display: none;
+}
+
+input:invalid:focus+.warning {
+    font-size: 1.4rem;
+    margin-top: 0.8rem;
+    color: #ff556e;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.col-2 {
+    gap: 2.4rem;
+    align-items: center;
+}
+
+.col-2 .input-wrapper:nth-child(2) {
+    flex-basis: 40%;
+}
+
+.help img {
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+}
+
+.info-security {
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    color: #000000b5;
+    font-size: 1.4rem;
+}
+.fa-solid{
+    color: #fff;
+}
+.preencha{
+    color: #fff;
+}
+button {
+    margin-top: 6rem;
+    margin-top: 6rem;
+    border: 0;
+    padding: 1.6rem;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0rem 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.4rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #000000;
+    cursor: none;
+    transition: 300ms ease-in;
+    border: 2px solid #000000;
+}
+
+button:hover {
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #fff;
+    
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    
+  }
+  
