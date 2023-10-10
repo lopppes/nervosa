@@ -7,7 +7,6 @@ body{
     background-color: #000;
     color: #ffffff;
     height: 100vh;
-    cursor: none;
     text-align: center;
     font-family: 'Urbanist', sans-serif;
     display: flex;
@@ -38,28 +37,11 @@ li{
 a{
     color: #ffffff;
     font-size: 25px;
-    cursor: none;
     transition: 300ms ease-in;
 }
 a:hover{
     color: red;
 }
-
-/*-----------------------------------*\
-  #CURSOR
-\*-----------------------------------*/
-  
-
-.custom-cursor {
-    width: 32px; 
-    height: 32px; 
-    background-image: url('../assets/src/second-imgs/cursor.avif'); 
-    background-size: cover;
-    position: absolute;
-    pointer-events: none; 
-    z-index: 1000000;
-}
-
 
 /*-----------------------------------*\
   #SCROLL

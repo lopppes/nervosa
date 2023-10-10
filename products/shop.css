@@ -19,7 +19,7 @@
 
      
 /*-----------------------------------*\
-  #CURSOR
+  #SCROLL
 \*-----------------------------------*/
   
 
@@ -72,26 +72,11 @@
     
 }
 
-/*-----------------------------------*\
-  #CURSOR
-\*-----------------------------------*/
-  
 
-.custom-cursor {
-    width: 32px; 
-    height: 32px; 
-    background-image: url('../assets/src/second-imgs/cursor.avif'); 
-    background-size: cover;
-    position: absolute;
-    pointer-events: none; 
-    z-index: 1000000;
-}
-  
 /*-----------------------------------*\
   #BODY
 \*-----------------------------------*/
 html{
-    cursor: none;
     overflow-x: hidden;
 }
 
@@ -147,7 +132,7 @@ form {
 }
 .voltar a{
     color: #fff;
-    cursor: none;
+    cursor: pointer;
     text-align: center;
     transition: 300ms ease-in;
 }
@@ -305,7 +290,7 @@ form {
     flex-direction: column;
     gap: 2.4rem;
     width: 100%;
-    cursor: none;
+    
 }
 
 label {
@@ -324,7 +309,7 @@ input {
     border: 0.1rem solid rgba(0, 0, 0, .3);
     border-radius: 0.5rem;
     color: #000000;
-    cursor: none;
+   
 }
 
 input:focus {
@@ -362,7 +347,7 @@ input:invalid:focus+.warning {
 .help img {
     width: 1.6rem;
     height: 1.6rem;
-    cursor: pointer;
+    
 }
 
 .info-security {
@@ -393,7 +378,7 @@ button {
     font-size: 1.8rem;
     line-height: 2.4rem;
     color: #000000;
-    cursor: none;
+    cursor: pointer;
     transition: 300ms ease-in;
     border: 2px solid #000000;
 }
@@ -404,33 +389,3 @@ button:hover {
     border: 2px solid #fff;
     
 }
-
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-  }
-  
-  .popup-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 25px;
-    
-  }
-  

@@ -79,20 +79,6 @@
   
   }
   
-   /**
-     * cursor
-  */
-
-  .custom-cursor {
-    width: 32px;
-    height: 32px;
-    background-image: url('./second-imgs/cursor.avif');
-    background-size: cover;
-    position: absolute;
-    pointer-events: none; 
-    z-index: 1000000;
-}
-  
   /*-----------------------------------*\
     #RESET
   \*-----------------------------------*/
@@ -103,7 +89,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none;
+  
   }
   
   li { list-style: none; }
@@ -150,7 +136,7 @@
     font-size: 1.6rem;
     font-weight: var(--fw-500);
     line-height: 1.6;
-    cursor: none;
+    
   }
 
   :focus-visible { outline-offset: 4px; }

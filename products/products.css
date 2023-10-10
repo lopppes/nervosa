@@ -84,7 +84,7 @@
   a {
     color: inherit;
     text-decoration: none;
-    cursor: none;
+  
   }
   
   img { height: auto; }
@@ -93,7 +93,7 @@
     background: none;
     border: none;
     font: inherit;
-    cursor: none;
+    cursor: pointer;
   }
   
   ion-icon {
@@ -112,7 +112,7 @@
     background-color: var(--black);
     color: var(--white);
     font-size: 1.6rem;
-    cursor: none;
+    
   }
 
       
@@ -167,25 +167,7 @@
     
 
     
-}
-  
-/*-----------------------------------*\
-  #CURSOR
-\*-----------------------------------*/
-  
-
-.custom-cursor {
-    width: 32px; 
-    height: 32px; 
-    background-image: url('../assets/src/second-imgs/cursor.avif'); /* Substitua com o caminho da sua imagem */
-    background-size: cover;
-    position: absolute;
-    pointer-events: none; /* Impede que o cursor personalizado seja clicado */
-    z-index: 1000000;
-}
-  
-  
-  
+} 
   
   /*-----------------------------------*\
     #REUSED STYLE
@@ -309,7 +291,7 @@
     color: var(--white);
     font-weight: var(--fw-700);
     padding-block-end: 22px;
-    cursor: none;
+   
   }
   .navbar-link:hover {
   color: var(--red);
@@ -333,7 +315,7 @@
     pointer-events: all;
   }
   .logo{
-    cursor: none;
+    cursor: pointer;
   }
 
 
@@ -399,7 +381,6 @@
 
 .ver-medidas{
   color: var(--red);
-  cursor: none;
   text-decoration:underline;
   margin-top: 25px;
   transition: 200ms ease-in;

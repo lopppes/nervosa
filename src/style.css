@@ -73,18 +73,6 @@ html{
 
 }
 
-/* cursor */
-
-.custom-cursor {
-    width: 32px; 
-    height: 32px; 
-    background-image: url('../assets/src/second-imgs/cursor.avif'); 
-    background-size: cover;
-    position: absolute;
-    pointer-events: none; 
-    z-index: 1000000;
-}
-
 /* body */
 
 body{
@@ -100,7 +88,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    cursor: none;
+    
 }
 
 /* main */
@@ -121,7 +109,7 @@ a{
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
-    cursor: none;
+  
 }
 a:hover{
    color: var(--gray-white);

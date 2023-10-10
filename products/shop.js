@@ -1,12 +1,5 @@
 'use strict';
 
-// cursor
-
-document.addEventListener('mousemove', (e) => {
-    const customCursor = document.querySelector('.custom-cursor');
-    customCursor.style.left = e.pageX + 'px';
-    customCursor.style.top = e.pageY + 'px';
-  });
   
   
   // preloader
@@ -103,34 +96,5 @@ IMask(document.querySelector("#cc-cvv"), {
       document.querySelector('#credit-card').classList.remove('card-number');
     });
   };
-  
-  
-// pop up
-
-const addButton = document.querySelector('button');
-const popup = document.getElementById('popup');
-const popupClose = document.getElementById('popup-close');
-
-addButton.addEventListener('click', () => {
-  const ccNumber = document.querySelector('#cc-number').value;
-  const ccHolder = document.querySelector('#cc-holder').value;
-  const ccValidity = document.querySelector('#cc-validity').value;
-  const ccCvv = document.querySelector('#cc-cvv').value;
-
-  if (!ccNumber || !ccHolder || !ccValidity || !ccCvv) {
-    popup.style.display = 'block';
-  }
-});
-
-popupClose.addEventListener('click', () => {
-  popup.style.display = 'none';
-});
-
-popup.addEventListener('click', (event) => {
-  if (event.target === popup) {
-    popup.style.display = 'none';
-  }
-});
-
   
   

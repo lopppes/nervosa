@@ -6,21 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 
-/*-----------------------------------*\
-  #CURSOR
-\*-----------------------------------*/
-  
-
-.custom-cursor {
-    width: 32px; 
-    height: 32px; 
-    background-image: url('./imgs/cursor.avif'); 
-    background-size: cover;
-    position: absolute;
-    pointer-events: none; 
-    z-index: 1000000;
-}
-
 
 /*-----------------------------------*\
   #SCROLL
@@ -122,7 +107,7 @@ html {
     font-size: 10px;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    cursor: none;
+    
   }
 
 /*-----------------------------------*\
@@ -183,7 +168,7 @@ main{
     align-items: center;
     gap: 10px;
     font-size: 18px;
-    cursor: none;
+  
     width: 25%;
     
     
@@ -221,7 +206,7 @@ main{
     margin-top: 25px;
     margin-bottom: 1px;
     font-weight: 400;
-    cursor: none;
+    
 
 }
 input::placeholder{
@@ -243,7 +228,7 @@ textarea{
     margin-bottom: 1px;
     font-weight: 400;
     margin-bottom: 25px;
-    cursor: none;
+    
     
 }
 textarea::placeholder{
@@ -261,7 +246,7 @@ textarea::placeholder{
     font-size: 20px;
     line-height: 18px;
     border: none;
-    cursor: none;
+    cursor: pointer;
 
 }
 .conteudo button:hover{
