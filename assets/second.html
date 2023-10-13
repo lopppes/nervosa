@@ -1310,7 +1310,12 @@
     - play
   -->
 
-  <audio id="myAudio" src="./src/audio/music.mpeg"></audio>
+  <audio id="myAudio" src="./src/audio/music.mpeg">
+    <source src="./src/audio/music.ogg.ogg" type="audio/ogg">
+    <source src="./src/audio/music.wav.wav" type="audio/wav">
+    seu navegador não suporta a tag de áudio.
+  </audio>
+ 
 
   <a href="#music" class="music-btn" onclick="toggleMusic()">
     <i class="fa-solid fa-play"></i>
