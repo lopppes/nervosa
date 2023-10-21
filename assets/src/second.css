@@ -423,7 +423,6 @@
   .navbar { display: none; }
 
 
-
   
   .header {
     position: relative;
@@ -1148,7 +1147,10 @@
     border: 1px solid var(--gray-web);
     border-radius: 5px;
     z-index: 1000;
-    transition:  1.5s ease-in-out /* Transição suave da opacidade */
+    transition:  1.5s ease-in-out 
+}
+.audio{
+  display: none;
 }
 
   
